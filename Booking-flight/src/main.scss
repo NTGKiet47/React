@@ -103,7 +103,11 @@ h2{
     padding: 1rem;
     color: var(--blackColor);
 }
-
+input{
+    border: none;
+    outline: none;
+    border-bottom: solid 1px var(--borderColor);
+}
 
 // NAVBAR
 .navBar{
@@ -142,6 +146,7 @@ h2{
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100px;
         position: fixed;
         top: 3rem;
         padding: 1.5rem 1rem;
@@ -210,7 +215,7 @@ h2{
     .navBar_with_bg{
         background-color: var(--SecondaryColor);
         padding: 0.5rem 1rem;
-        box-shadow: var(--boxShadow);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     }
 }
 
@@ -315,13 +320,379 @@ h2{
                 }
                 input{
                     width: 95%;
-                    border: none;
-                    outline: none;
-
+                    
                     &::placeholder{
                         font-size: 12px;
                         opacity: 0.6;
                     }
+                }
+            }
+        }
+    }
+}
+
+// SUPPORT
+.support{
+    .sectionContainer{
+        .tittlesDiv{
+            text-align: center;
+            small{
+                letter-spacing: .6rem;
+                text-transform: uppercase;
+                font-size: 13px;
+                color: var(--blackColor);
+                line-height: 1.5rem;
+            }
+        }
+        .infoDiv{
+            margin-top: 2rem;
+            gap: 1.5rem;
+            .textDiv{
+                gap: 1.5rem;
+                .singleInfo{
+                    .number{
+                        background-color: var(--PrimaryColor);
+                        padding: 5px 12px;
+                        width: 40px;
+                        border-radius: 3rem;
+                        text-align: center;
+                        font-weight: 700;
+                        color: var(--whiteColor);
+                    }
+                    .colorOne{
+                        background-color: var(--colorOne);
+                    }
+                    .colorTwo{
+                        background-color: var(--colorTwo);
+                    }
+                }
+            }
+            .imageDiv{
+                margin: auto;
+                img{
+                    width: 100%;
+                    max-width: 420px;
+                    border-radius: 10rem;
+                }
+            }
+        }
+    }
+}
+
+// INFO
+.info{
+    background-color: var(--SecondaryColor);
+    .infoContainer{
+        .tittleDiv{
+            flex-direction: column;
+            text-align: center;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+
+        .cardsDiv{
+            gap: 1.5rem;
+            margin-top: 3rem;
+
+            .singleCard{
+                background-color: var(--whiteColor);
+                padding: 3rem 2rem;
+                border-radius: 10rem;
+                gap: 1rem;
+                text-align: center;
+                margin: auto;
+                height: 320px;
+                width: 90%;
+                max-width: 250px;
+
+                .iconDiv{
+                    justify-content: center;
+                    margin: auto;
+                    background-color: var(--PrimaryColor);
+                    height: 55px;
+                    padding: 1rem;
+                    border-radius: 3rem;
+
+                    .icon{
+                        color: var(--whiteColor);
+                    }
+                }
+
+                .cardTitle{
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+                .colorOne{
+                    background-color: var(--colorOne);
+                }
+                .colorTwo{
+                    background-color: var(--colorTwo);
+                }
+            }
+        }
+    }
+}
+
+// LOUNGE
+.lounge{
+    .sectionContainer{
+        gap: 1.5rem;
+        .imgDiv{
+            margin: auto;
+            img{
+                width: 100%;
+                max-width: 430px;
+                border-radius: 10rem;
+            }
+        }
+        .textDiv{
+            .grids{
+                margin-top: 1rem;
+                gap: 1.5rem;
+                padding-left: 16px;
+                .singleGrid{
+                    .girdTitle{
+                        display: block;
+                        padding-bottom: .5rem;
+                        font-weight: 500;
+                        color: var(--blackColor);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// SUBSCRIBE
+.subscribe{
+    background-color: var(--SecondaryColor);
+    .sectionContainer{
+        text-align: center;
+        .inputDiv{
+            margin-top: 1rem;
+            flex-direction: column;
+            background-color: var(--whiteColor);
+            border-radius: 1rem;
+            input{
+                width: 80%;
+                margin: 0 auto;
+                background: transparent;
+                padding: 1rem .5rem;
+                border: none;
+
+                &::placeholder{
+                    font-size: 13px;
+                    opacity: .5;
+                }
+            }
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+}
+// FOOTER
+.footer{
+    background-color: var(--SecondaryColor);
+    .sectionContainer{
+        gap: 2.5rem;
+        .gridOne{
+            gap: 1rem;
+            justify-content: center;
+            margin: auto;
+
+            .logoDiv{
+                width: 20%;
+            }
+
+            .socialIcon{
+                margin-top: 1rem;
+                gap: 1rem;
+                .icon{
+                    transition: var(--transition);
+                    height: 50px;width: 30px;
+                    border-radius: 30px;
+                    border: solid 1px var(--borderColor);
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                    padding: .4rem;
+                    color: var(--greyText);
+
+                    &:hover{
+                        background-color: var(--PrimaryColor);
+                        transform: translateY(-5px);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+        .footerLinks{
+            display: grid;
+            .linkTitle{
+                color: var(--blackColor);
+                font-weight: 500;
+                display: block;
+                padding-bottom: 1rem;
+            }
+            li a{
+                display: block;
+                color: var(--greyText);
+                transition: linear 0.2s;
+                padding: 0.3rem 0;
+                &:hover{
+                    transform: translateX(7px);
+                    color: var(--PrimaryColor);
+                }
+            }
+        }
+    }
+    .copyRightDiv{
+        justify-content: center;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        gap: 1rem;
+        border-top: 1px solid var(--greyText);
+        text-align: center;
+        a{
+            color: var(--PrimaryColor);
+            font-weight: 500;
+        }
+    }
+}
+
+// MEDIA SCREEN 
+@media screen and (min-width: 480px){
+    .home{
+        padding-top: 10rem;
+    }
+
+    .search{
+        .sectionContainer{
+            .searchInputs{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+
+    .subscribe{
+        .sectionContainer{
+            max-width: 80%;
+            margin: auto;
+
+            .inputDiv{
+                flex-direction: row;
+                padding: 0 0.5rem;
+                border-radius: 3rem;
+                .btn{
+                    max-width: max-content;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .footer{
+        .sectionContainer{
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            .footerLinks{
+                justify-content: center;
+            }
+        }
+    }
+}
+@media screen and (min-width: 570px){
+    .home{
+        .mainText{
+            width: 80%;
+        }
+        .homeImage{
+            .video{
+                border-radius: 15rem;
+            }
+            .plane{
+                position: absolute;
+                width: 95%;
+            }
+        }
+    }
+
+    .search{
+        .sectionContainer{
+            .btns{
+                border-radius: 3rem;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .support{
+        .sectionContainer{
+            .infoDiv{
+                .textDiv{
+                    margin-top: 2rem;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+    .footer{
+        .sectionContainer{
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            .footerLinks{
+                justify-content: center;
+            }
+        }
+    }
+    .info{
+        .infoContainer{
+            .tittleDiv{
+                flex-direction: row;
+                h2{
+                    text-align: left;
+                    max-width: 500px;
+                }
+            }
+            .cardsDiv{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    .lounge{
+        .sectionContainer{
+            .textDiv{
+                .grids{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+    .subscribe{
+        .sectionContainer{
+
+            .inputDiv{
+                justify-content: space-between;
+
+                .btn{
+                    text-align: center;
+                    
+                }
+            }
+        }
+    }
+    .footer{
+        .sectionContainer{
+            padding-top: 2rem;
+        }
+    }
+}
+@media screen and (min-width: 767px){
+    .navBar{
+        .navBarTwo{
+            background-color: red;
+            .navBarMenu{
+                gap: 2rem;
+                li{
                 }
             }
         }

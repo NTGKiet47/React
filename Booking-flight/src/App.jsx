@@ -5,7 +5,6 @@ import Search from "./Components/Search/Search"
 import Support from "./Components/Support/Support"
 import Info from "./Components/Info/Info"
 import Lounge from "./Components/Lounge/Lounge"
-import Traveler from "./Components/Traveler/Traveler"
 import Subscriber from "./Components/Subscriber/Subscriber"
 import Footer from "./Components/Footer/Footer"
 
@@ -15,12 +14,11 @@ const App = () => {
       <NavBar />
       <Home />
       <Search />
-      {/* <Support />
+      <Support />
       <Info />
       <Lounge />
-      <Traveler />
       <Subscriber />
-      <Footer /> */}
+      <Footer />
     </div>
   )
 }
